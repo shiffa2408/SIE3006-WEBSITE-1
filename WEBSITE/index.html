@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CSS INSIDE HTML -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #1f3d2b;
+            padding: 15px 40px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+		
+		body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+        }
+      
+	  .hero-box h1 {
+    font-family: 'Playfair Display', serif;
+        }
+
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        /* HERO */
+        .hero {
+            height: 80vh;
+            background: #e6efe9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero a {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2f5d3a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* COLUMN SECTION */
+        .columns {
+            display: flex;
+            gap: 30px;
+            padding: 60px;
+            background: #f4f4f4;
+        }
+
+        .card {
+            flex: 1;
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .green { background: #2f5d3a; }
+        .light { background: #4f8f5a; }
+        .dark { background: #1f3d2b; }
+
+        /* FOOTER */
+        footer {
+            background: #1f3d2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div><b>MY LOGO</b></div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+		<!-- HERO -->
+
+		<section style="
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+">
+
+    <img src="bg.jpeg"
+         style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+         ">
+
+    <h1 style="color:white; font-size:40px;">
+        Hello, Hi There 👋
+    </h1>
+
+    <p style="color:white; font-size:18px;">
+        Welcome to My Website
+    </p>
+
+    <a href="member.html"
+       style="
+            margin-top:20px;
+            padding:12px 25px;
+            background: rgba(0,0,0,0.6);
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+       ">
+        CLICK HERE
+    </a>
+
+</section>
+
+		
+
+    <!-- COLUMNS -->
+    <section id="practical" class="columns">
+        <div class="card green">
+            <h2>First Practical</h2>
+            <p>Click to view first practical</p>
+            <a href="p1.html">View</a>
+        </div>
+
+        <div class="card light">
+            <h2>Second Practical</h2>
+            <p>Click to view second practical</p>
+            <a href="practical2.html">View</a>
+        </div>
+
+        <div class="card dark">
+            <h2>Mini Project</h2>
+            <p>Fieldtrip project</p>
+            <a href="fieldtrip.html">View</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Student Website
+    </footer>
+
+</body>
+</html>
